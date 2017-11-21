@@ -1,0 +1,10 @@
+import sampleneo4japp.Activity
+
+model {
+    Activity activity
+}
+json {
+    id activity.id
+    description activity.description
+    owner g.render(activity.owner)
+}

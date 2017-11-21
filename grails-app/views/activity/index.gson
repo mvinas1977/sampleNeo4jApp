@@ -1,0 +1,11 @@
+import sampleneo4japp.Activity
+
+model {
+    List activityList
+}
+json {
+    activityList.each { Activity activity ->
+        id: activity.id
+        ownerId: activity.owner?.id
+    }
+}
