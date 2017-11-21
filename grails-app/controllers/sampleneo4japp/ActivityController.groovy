@@ -1,5 +1,8 @@
 package sampleneo4japp
 
+import grails.compiler.GrailsCompileStatic
+
+@GrailsCompileStatic
 class ActivityController {
 
     def index() {

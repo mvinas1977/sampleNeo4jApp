@@ -33,4 +33,8 @@ if (Environment.isDevelopmentMode() && targetDir != null) {
     }
     logger("StackTrace", ERROR, ['FULL_STACKTRACE'], false)
 }
-root(ERROR, ['STDOUT'])
+
+root(WARN, ['STDOUT'])
+logger('org.grails', TRACE, ['STDOUT'])
+logger('grails', TRACE, ['STDOUT'])
+logger('sampleNeo4jApp', TRACE, ['STDOUT'])

@@ -7,6 +7,7 @@ grails:
         transactionManagement:
             proxies: false
     gorm:
+        autowire: false
         reactor:
             # Whether to translate GORM events into Reactor events
             # Disabled by default for performance reasons
@@ -81,6 +82,9 @@ grails:
                 scriptlets: html
                 taglib: none
                 staticparts: none
+    gorm:
+        autowire: false
+
 endpoints:
     jmx:
         unique-names: true
@@ -89,7 +93,7 @@ endpoints:
 hibernate:
     cache:
         queries: false
-        use_second_level_cache: false
+        use_second_level_cache: true
         use_query_cache: false
 dataSource:
     pooled: true
