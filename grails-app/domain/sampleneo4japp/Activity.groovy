@@ -1,8 +1,6 @@
 package sampleneo4japp
 
-class Activity {
-
-    static mapWith = "neo4j"
+class Activity extends BaseBean {
 
     String description
 
